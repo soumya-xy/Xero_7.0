@@ -1,7 +1,7 @@
 # LNMHacks
-# {{name}} - A Patreon-like Platform Powered by Aptos Blockchain
+# Xero - A Patreon-like Platform Powered by Aptos Blockchain
 
-{{name}} is a decentralized platform designed to revolutionize the way content creators connect with their fans. Built on the Aptos blockchain, our platform ensures seamless payments, reduced fees, and complete transparency, empowering creators to focus on their content without worrying about high platform commissions.
+Xero is a decentralized platform designed to revolutionize the way content creators connect with their fans. Built on the Aptos blockchain, our platform ensures seamless payments, reduced fees, and complete transparency, empowering creators to focus on their content without worrying about high platform commissions.
 
 ---
 
@@ -51,8 +51,8 @@ Follow these steps to set up the project on your local machine:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/{{name}}.git
-   cd {{name}}
+   git clone https://github.com/stark0908/Xero.git
+   cd Xero
    ```
 
 2. **Install dependencies**
@@ -129,6 +129,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - The open-source community for tools and libraries.
 
 ---
-
-Feel free to suggest a name for {{name}}, and let's create a decentralized future for content creators together! 🚀
+ 🚀
 

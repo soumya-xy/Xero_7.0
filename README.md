@@ -1,4 +1,4 @@
-# LNMHacks
+# Xero 
 
 # Xero - A Patreon-like Platform Powered by Aptos Blockchain
 

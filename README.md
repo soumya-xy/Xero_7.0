@@ -20,7 +20,6 @@ Xero is a decentralized platform designed to revolutionize the way content creat
 ---
 ![alt text](https://github.com/stark0908/Xero/blob/main/Flow.png?raw=true)
 ---
-## Features
 
 ## Tech Stack
 

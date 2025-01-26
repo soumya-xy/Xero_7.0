@@ -1,5 +1,3 @@
-# Xero 
-
 # Xero - A Patreon-like Platform Powered by Aptos Blockchain
 
 Xero is a decentralized platform designed to revolutionize the way content creators connect with their fans. Built on the Aptos blockchain, our platform ensures seamless payments, reduced fees, and complete transparency, empowering creators to focus on their content without worrying about high platform commissions.

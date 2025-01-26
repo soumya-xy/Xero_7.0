@@ -14,7 +14,6 @@ import FAQs from './components/FAQs.jsx';
 import Profile from './components/Profile.jsx';
 
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -35,7 +34,8 @@ const router = createBrowserRouter(
       
       <Route path="/FAQs" element={<FAQs />}/>
       <Route path="/profile/:id" element={<Profile />} />
-      </Route>
+      <Route path="/xero/connect" element={<connectWallet />} />
+       </Route>
   ))
 
 createRoot(document.getElementById('root')).render(

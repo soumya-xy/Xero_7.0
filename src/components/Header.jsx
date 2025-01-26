@@ -5,6 +5,30 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
 
+  async function connectWallet() {
+    try {
+      const response = await fetch("http://localhost:3000/xero/connect", {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log("Wallet connection successful:", data);
+      // Handle successful connection here (e.g., update UI, store connection state)
+      
+    } catch (error) {
+      console.error("Failed to connect wallet:", error);
+      // Handle error here (e.g., show error message to user)
+    }
+  }
+
   return (
     <header className="fixed w-full bg-black/30 backdrop-blur-[2px] z-50 border-b border-gray-800/30">
       <div className="max-w-[1920px] mx-auto px-6 sm:px-8 lg:px-12">
@@ -57,7 +81,7 @@ const Header = () => {
                 className="h-6 w-6"
               />
             </a>
-            <button className="px-6 py-2.5 bg-purple-600/90 hover:bg-purple-600 text-white rounded-full flex items-center hover:scale-105 transition-all duration-200">
+            <button onClick = {connectWallet} className="px-6 py-2.5 bg-purple-600/90 hover:bg-purple-600 text-white rounded-full flex items-center hover:scale-105 transition-all duration-200">
               <Wallet className="mr-2 h-5 w-5" />
               Connect Wallet
             </button>
@@ -90,7 +114,7 @@ const Header = () => {
                 />
               </div>
             </div>
-            <button className="block w-full px-3 py-2.5 text-base font-medium text-white bg-purple-600/90 hover:bg-purple-600 rounded-full items-center justify-center">
+            <button onClick = {connectWallet} className="block w-full px-3 py-2.5 text-base font-medium text-white bg-purple-600/90 hover:bg-purple-600 rounded-full items-center justify-center">
               <Wallet className="mr-2 h-5 w-5" />
               Connect Wallet
             </button>
@@ -100,5 +124,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;
